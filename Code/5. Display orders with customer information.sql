@@ -1,7 +1,7 @@
--- Question: Retrieve the order number, order date, status, and customer name for every order. Sort the results by order date, with the most recent orders appearing first.
--- Skills: SELECT, FROM, JOIN, ORDER BY
 SELECT orders.orderNumber,
     orders.orderDate,
-    orders.status
+    orders.status,
+    customers.customerName
 FROM orders
-ORDER BY orderDate ASC
+    LEFT JOIN customers ON customers.customerNumber = orders.customerNumber
+ORDER BY orders.orderDate ASC;
