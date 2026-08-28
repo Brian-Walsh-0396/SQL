@@ -1,0 +1,212 @@
+[
+  {
+    "customerNumber": 141,
+    "paymentDate": "2005-03-18",
+    "amount": "120166.58"
+  },
+  {
+    "customerNumber": 141,
+    "paymentDate": "2004-12-31",
+    "amount": "116208.40"
+  },
+  {
+    "customerNumber": 124,
+    "paymentDate": "2003-08-15",
+    "amount": "111654.40"
+  },
+  {
+    "customerNumber": 148,
+    "paymentDate": "2003-12-26",
+    "amount": "105743.00"
+  },
+  {
+    "customerNumber": 124,
+    "paymentDate": "2005-03-05",
+    "amount": "101244.59"
+  },
+  {
+    "customerNumber": 321,
+    "paymentDate": "2003-11-03",
+    "amount": "85559.12"
+  },
+  {
+    "customerNumber": 124,
+    "paymentDate": "2004-08-28",
+    "amount": "85410.87"
+  },
+  {
+    "customerNumber": 167,
+    "paymentDate": "2003-12-03",
+    "amount": "85024.46"
+  },
+  {
+    "customerNumber": 124,
+    "paymentDate": "2005-04-16",
+    "amount": "83598.04"
+  },
+  {
+    "customerNumber": 114,
+    "paymentDate": "2004-12-15",
+    "amount": "82261.22"
+  },
+  {
+    "customerNumber": 239,
+    "paymentDate": "2004-03-15",
+    "amount": "80375.24"
+  },
+  {
+    "customerNumber": 323,
+    "paymentDate": "2005-05-23",
+    "amount": "75020.13"
+  },
+  {
+    "customerNumber": 141,
+    "paymentDate": "2005-03-25",
+    "amount": "65071.26"
+  },
+  {
+    "customerNumber": 141,
+    "paymentDate": "2003-12-09",
+    "amount": "63843.55"
+  },
+  {
+    "customerNumber": 157,
+    "paymentDate": "2004-09-07",
+    "amount": "63357.13"
+  },
+  {
+    "customerNumber": 298,
+    "paymentDate": "2004-09-18",
+    "amount": "61402.00"
+  },
+  {
+    "customerNumber": 259,
+    "paymentDate": "2004-11-06",
+    "amount": "61234.67"
+  },
+  {
+    "customerNumber": 141,
+    "paymentDate": "2004-01-30",
+    "amount": "59830.55"
+  },
+  {
+    "customerNumber": 450,
+    "paymentDate": "2004-06-21",
+    "amount": "59551.38"
+  },
+  {
+    "customerNumber": 495,
+    "paymentDate": "2003-12-26",
+    "amount": "59265.14"
+  },
+  {
+    "customerNumber": 151,
+    "paymentDate": "2003-06-18",
+    "amount": "58841.35"
+  },
+  {
+    "customerNumber": 151,
+    "paymentDate": "2003-12-22",
+    "amount": "58793.53"
+  },
+  {
+    "customerNumber": 458,
+    "paymentDate": "2003-06-13",
+    "amount": "57131.92"
+  },
+  {
+    "customerNumber": 124,
+    "paymentDate": "2004-11-02",
+    "amount": "55639.66"
+  },
+  {
+    "customerNumber": 363,
+    "paymentDate": "2003-12-05",
+    "amount": "55425.77"
+  },
+  {
+    "customerNumber": 145,
+    "paymentDate": "2003-02-20",
+    "amount": "53959.21"
+  },
+  {
+    "customerNumber": 227,
+    "paymentDate": "2004-11-02",
+    "amount": "53745.34"
+  },
+  {
+    "customerNumber": 256,
+    "paymentDate": "2004-10-22",
+    "amount": "53116.99"
+  },
+  {
+    "customerNumber": 187,
+    "paymentDate": "2004-11-03",
+    "amount": "52825.29"
+  },
+  {
+    "customerNumber": 320,
+    "paymentDate": "2003-11-24",
+    "amount": "52548.49"
+  },
+  {
+    "customerNumber": 496,
+    "paymentDate": "2004-12-31",
+    "amount": "52166.00"
+  },
+  {
+    "customerNumber": 278,
+    "paymentDate": "2003-03-02",
+    "amount": "52151.81"
+  },
+  {
+    "customerNumber": 386,
+    "paymentDate": "2004-07-18",
+    "amount": "51619.02"
+  },
+  {
+    "customerNumber": 172,
+    "paymentDate": "2004-12-04",
+    "amount": "51209.58"
+  },
+  {
+    "customerNumber": 204,
+    "paymentDate": "2004-08-13",
+    "amount": "51152.86"
+  },
+  {
+    "customerNumber": 385,
+    "paymentDate": "2003-03-09",
+    "amount": "51001.22"
+  },
+  {
+    "customerNumber": 350,
+    "paymentDate": "2003-05-25",
+    "amount": "50824.66"
+  },
+  {
+    "customerNumber": 363,
+    "paymentDate": "2004-11-17",
+    "amount": "50799.69"
+  },
+  {
+    "customerNumber": 161,
+    "paymentDate": "2003-11-18",
+    "amount": "50743.65"
+  },
+  {
+    "customerNumber": 205,
+    "paymentDate": "2003-09-05",
+    "amount": "50342.74"
+  },
+  {
+    "customerNumber": 121,
+    "paymentDate": "2003-02-16",
+    "amount": "50218.95"
+  },
+  {
+    "customerNumber": 131,
+    "paymentDate": "2004-12-02",
+    "amount": "50025.35"
+  }
+]
