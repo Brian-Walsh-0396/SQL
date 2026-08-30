@@ -1,8 +1,7 @@
-SELECT
-    products.productName,
-    SUM(orderdetails.quantityOrdered * orderdetails.priceEach) AS totalRevenue
-FROM products
-JOIN orderdetails
-    ON products.productCode = orderdetails.productCode
-GROUP BY products.productCode, products.productName
-ORDER BY totalRevenue DESC;
+SELECT customers.customerName,
+    COUNT(orders.orderNumber) as totalOrders
+from customers
+    INNER JOIN orders ON customers.customerNumber = orders.customerNumber
+GROUP BY customers.customerNumber,
+    customers.customerName
+ORDER BY totalOrders DESC;
