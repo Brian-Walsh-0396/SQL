@@ -1,5 +1,6 @@
-SELECT
-    orderNumber,
-    quantityOrdered
-FROM orderdetails
-GROUP BY orderNumber, quantityOrdered;
+SELECT customerNumber,
+    customerName
+FROM customers;
+SELECT customerNumber,
+    comments
+FROM orders

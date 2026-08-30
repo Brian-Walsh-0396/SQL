@@ -1,8 +1,8 @@
-# SQL \& Data Analysis Portfolio
+# SQL Portfolio
 
 
 
-This repository showcases my ongoing work in \*\*SQL, MySQL, and data analysis\*\*, with an emphasis on applying technical skills to practical business questions and data-driven problem solving.
+This repository showcases my ongoing work with \*\*SQL and MySQL\*\*, demonstrating practical experience writing, testing, and refining queries against a relational database.
 
 
 
@@ -10,11 +10,11 @@ This repository showcases my ongoing work in \*\*SQL, MySQL, and data analysis\*
 
 
 
-This is an \*\*actively maintained portfolio\*\*, with new SQL queries, analysis, and projects being added regularly.
+This is an \*\*actively maintained portfolio\*\*, with new SQL queries and projects being added regularly.
 
 
 
-Development is completed in \*\*Visual Studio Code (VS Code)\*\* using a local \*\*MySQL server\*\*. Queries are developed, tested, and refined within a local relational database environment.
+All development is completed in \*\*Visual Studio Code (VS Code)\*\* connected to a local \*\*MySQL server\*\*. Queries are developed and tested directly against the database environment.
 
 
 
@@ -22,9 +22,7 @@ Development is completed in \*\*Visual Studio Code (VS Code)\*\* using a local \
 
 
 
-The data used throughout this portfolio comes from the \*\*MySQL Sample Database\*\*, a publicly available practice dataset provided by MySQLTutorial.org.
-
-
+The data used in this repository comes from the *MySQL Sample Database*, a publicly available practice dataset provided by MySQLTutorial.org.
 
 
 
@@ -32,15 +30,11 @@ The data used throughout this portfolio comes from the \*\*MySQL Sample Database
 
 
 
-The purpose of this portfolio is to demonstrate my ability to work with structured data, write effective SQL queries, analyze information, and translate data into meaningful business insights.
+The purpose of this repository is to demonstrate practical SQL proficiency through progressively more complex queries, database relationships, filtering, aggregation, and data retrieval.
 
 
 
-This repository represents an \*\*active body of work\*\* that will continue to evolve as I expand my experience across SQL, data analysis, and business intelligence.
-
-
-
-
+This is an \*\*active portfolio\*\* and will continue to evolve as I build out additional SQL work.
 
 
 
