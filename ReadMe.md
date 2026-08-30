@@ -26,8 +26,6 @@ The data used throughout this portfolio comes from the \*\*MySQL Sample Database
 
 
 
-[MySQL Sample Database – MySQLTutorial.org](%28https://www.mysqltutorial.org/getting-started-with-mysql/mysql-sample-database/?utm_source=chatgpt.com%29)
-
 
 
 ### Objective
