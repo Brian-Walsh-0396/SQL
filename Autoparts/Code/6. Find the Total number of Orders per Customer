@@ -1,0 +1,5 @@
+SELECT
+    orderNumber,
+    quantityOrdered
+FROM orderdetails
+GROUP BY orderNumber, quantityOrdered;
