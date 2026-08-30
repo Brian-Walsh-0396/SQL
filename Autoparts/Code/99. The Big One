@@ -1,0 +1,61 @@
+SELECT
+    c.customerNumber,
+    c.customerName,
+    c.country,
+    c.creditLimit,
+
+    CONCAT(e.firstName, ' ', e.lastName) AS salesRepresentative,
+
+    COUNT(DISTINCT o.orderNumber) AS totalOrders,
+
+    MAX(o.orderDate) AS mostRecentOrder,
+
+    SUM(od.quantityOrdered * od.priceEach) AS totalSales,
+
+    SUM(DISTINCT p.amount) AS totalPayments,
+
+    COUNT(DISTINCT p.checkNumber) AS totalPaymentsMade,
+
+    GROUP_CONCAT(
+        DISTINCT pr.productName
+        ORDER BY pr.productName
+        SEPARATOR ', '
+    ) AS productsPurchased,
+
+    MAX(pr.buyPrice) AS highestProductBuyPrice,
+
+    MAX(pr.quantityInStock) AS highestInventoryLevel
+
+FROM customers c
+
+LEFT JOIN employees e
+    ON c.salesRepEmployeeNumber = e.employeeNumber
+
+LEFT JOIN orders o
+    ON c.customerNumber = o.customerNumber
+
+LEFT JOIN orderdetails od
+    ON o.orderNumber = od.orderNumber
+
+LEFT JOIN products pr
+    ON od.productCode = pr.productCode
+
+LEFT JOIN payments p
+    ON c.customerNumber = p.customerNumber
+
+WHERE c.country = 'USA'
+
+GROUP BY
+    c.customerNumber,
+    c.customerName,
+    c.country,
+    c.creditLimit,
+    e.firstName,
+    e.lastName
+
+HAVING
+    totalOrders > 0
+
+ORDER BY
+    totalOrders DESC,
+    totalSales DESC;
