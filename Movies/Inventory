@@ -1,7 +1,0 @@
-SELECT
-    title,
-    release_year,
-    rental_rate,
-    rating
-FROM film
-ORDER BY rating ASC, release_year DESC;
