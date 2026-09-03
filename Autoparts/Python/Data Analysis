@@ -1,0 +1,131 @@
+import mysql.connector
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# --------------------------------------------------
+# 1. Connect to MySQL
+# --------------------------------------------------
+
+connection = mysql.connector.connect(
+    host="localhost",
+    user="root",
+    password="YOUR_PASSWORD",
+    database="classicmodels"
+)
+
+# --------------------------------------------------
+# 2. Query sales data
+# --------------------------------------------------
+
+query = """
+SELECT
+    p.productLine,
+    p.productName,
+    SUM(od.quantityOrdered) AS quantitySold,
+    SUM(od.quantityOrdered * od.priceEach) AS revenue
+FROM products AS p
+JOIN orderdetails AS od
+    ON p.productCode = od.productCode
+GROUP BY
+    p.productLine,
+    p.productCode,
+    p.productName
+ORDER BY revenue DESC;
+"""
+
+df = pd.read_sql(query, connection)
+
+# Close database connection
+connection.close()
+
+# --------------------------------------------------
+# 3. Preview the data
+# --------------------------------------------------
+
+print(df.head())
+print(df.info())
+
+# --------------------------------------------------
+# 4. Revenue by Product Line
+# --------------------------------------------------
+
+revenue_by_line = (
+    df.groupby("productLine")["revenue"]
+    .sum()
+    .sort_values(ascending=False)
+)
+
+plt.figure(figsize=(10, 6))
+
+revenue_by_line.plot(kind="bar")
+
+plt.title("Revenue by Product Line")
+plt.xlabel("Product Line")
+plt.ylabel("Revenue ($)")
+plt.xticks(rotation=45)
+plt.tight_layout()
+
+plt.show()
+
+# --------------------------------------------------
+# 5. Top 10 Products by Revenue
+# --------------------------------------------------
+
+top_products = df.head(10).sort_values("revenue")
+
+plt.figure(figsize=(10, 6))
+
+plt.barh(
+    top_products["productName"],
+    top_products["revenue"]
+)
+
+plt.title("Top 10 Products by Revenue")
+plt.xlabel("Revenue ($)")
+plt.ylabel("Product")
+
+plt.tight_layout()
+
+plt.show()
+
+# --------------------------------------------------
+# 6. Quantity Sold by Product Line
+# --------------------------------------------------
+
+quantity_by_line = (
+    df.groupby("productLine")["quantitySold"]
+    .sum()
+    .sort_values(ascending=False)
+)
+
+plt.figure(figsize=(10, 6))
+
+quantity_by_line.plot(kind="bar")
+
+plt.title("Units Sold by Product Line")
+plt.xlabel("Product Line")
+plt.ylabel("Units Sold")
+plt.xticks(rotation=45)
+
+plt.tight_layout()
+
+plt.show()
+
+# --------------------------------------------------
+# 7. Revenue vs Quantity Sold
+# --------------------------------------------------
+
+plt.figure(figsize=(10, 6))
+
+plt.scatter(
+    df["quantitySold"],
+    df["revenue"]
+)
+
+plt.title("Revenue vs Quantity Sold")
+plt.xlabel("Quantity Sold")
+plt.ylabel("Revenue ($)")
+
+plt.tight_layout()
+
+plt.show()
